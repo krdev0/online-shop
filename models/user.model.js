@@ -19,7 +19,7 @@ class User {
         await db.getDatabase().collection('users').insertOne({
             email: this.email,
             password: hashedPassword,
-            name: this.name,
+            name: this.fullname,
             address: this.address
         });
     }
