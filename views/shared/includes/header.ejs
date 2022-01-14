@@ -1,4 +1,13 @@
 <header>
     <div><a href="#">HandMade Shop</a></div>
-    <nav></nav>
+    <nav>
+        <ul>
+            <% if(locals.isAuth) { %>
+                <li>
+                    <button>Logout</button>
+                </li>
+            <% } %>
+            <li><a href="/login">Login</a></li>
+        </ul>
+    </nav>
 </header>
